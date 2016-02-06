@@ -749,7 +749,7 @@ limitations under the License.
 				menu.on("focusin.accessible-megamenu", ":focusable, ." + settings.panelClass, $.proxy(_focusInHandler, this))
 					.on("focusout.accessible-megamenu", ":focusable, ." + settings.panelClass, $.proxy(_focusOutHandler, this))
 					.on("keydown.accessible-megamenu", $.proxy(_keyDownHandler, this))
-					.on("mouseover.accessible-megamenu", $.proxy(_mouseOverHandler, this))
+					//.on("mouseover.accessible-megamenu", $.proxy(_mouseOverHandler, this))
 					.on("mouseout.accessible-megamenu", $.proxy(_mouseOutHandler, this))
 					.on("mousedown.accessible-megamenu", $.proxy(_mouseDownHandler, this));
 
