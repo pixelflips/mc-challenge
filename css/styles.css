@@ -36,7 +36,7 @@ nav {
 }
 .nav-item > a {
 	display: inline-block;
-	padding: 14px 24px 15px 0;
+	padding: 15px 25px 15px 0;
 	position: relative;
 }
 .nav-item > a:hover,
@@ -63,11 +63,11 @@ nav {
 	display: none;
 	font-size: 13px;
 	position: absolute;
-	top: 49px;
+	top: 50px;
 }
 .sub-nav a {
 	display: block;
-	padding: 12px 18px;
+	padding: 10px 15px;
 }
 .sub-nav a:hover,
 .sub-nav a:focus {
@@ -86,4 +86,29 @@ nav {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+}
+@media screen and (max-width: 480px) {
+	nav {
+		border: 0;
+	}
+	.nav-item {
+		border-bottom: 1px solid #e0e0e0;
+		display: block;
+	}
+	.nav-item > a {
+		display: block;
+		padding: 15px 25px 15px 15px;
+	}
+	.nav-item > a[aria-haspopup="true"]:after {
+		float: right;
+		margin-top: 8px;
+	}
+	.sub-nav {
+		border: 0;
+		box-shadow: none;
+		position: static;
+	}
+	.sub-nav ul {
+		width: 100%;
+	}
 }
